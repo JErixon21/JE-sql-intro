@@ -1,5 +1,9 @@
 -- What was the last team (and year) to play at U.S. Cellular Field?
 
+.mode columns
+.headers on
+
+SELECT year, name FROM teams WHERE park = "U.S. Cellular Field" ORDER BY year DESC LIMIT 1;
 -- Expected result:
 --
 -- +------+-------------------+
